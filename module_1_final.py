@@ -11,6 +11,6 @@ students_avg_points = {students_list[0]:sum(grades[0])/len(grades[0]),
                        students_list[2]:sum(grades[2])/len(grades[2]),
                        students_list[3]:sum(grades[3])/len(grades[3]),
                        students_list[4]:sum(grades[4])/len(grades[4])}
-print('средний бал по каждому студенту', students_avg_points)
+print('Средний бал по каждому студенту', students_avg_points)
 
 
