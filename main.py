@@ -18,9 +18,10 @@
 # a = float('123.456')*10
 # print(int(a%10))
 
-print('Hi, PyCharm')
-x = 43
-y = 32
-print(x * y)
-print("End line")
+# print('Hi, PyCharm')
+# x = 43
+# y = 32
+# print(x * y)
+# print("End line")
 
+print(all([1,2,2]))
