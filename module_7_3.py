@@ -9,7 +9,7 @@ class WordsFinder:
     def get_all_words(self):
         all_words = {}
         for file_name in self.file_names:
-            with (open(file_name, 'r', encoding='utf-8') as file):
+            with open(file_name, 'r', encoding='utf-8') as file:
                 words = []
                 for line in file.readlines():
                     words_in_line = re.split(r'[,.=!?;: ]+', line.rstrip())
