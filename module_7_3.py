@@ -23,22 +23,22 @@ class WordsFinder:
     def find(self, word):
         all_words = self.get_all_words()
         result = {}
-        for words_in_file in all_words.items():
-            for word_in_list in words_in_file[1]:
+        for name, words in all_words.items():
+            for word_in_list in words:
                 if word_in_list == word.lower():
-                    result[words_in_file[0]] = words_in_file[1].index(word_in_list) + 1
+                    result[name] = words.index(word_in_list) + 1
         return result
 
     def count(self, word):
         all_words = self.get_all_words()
         result = {}
-        for words_in_file in all_words.items():
+        for name, words in all_words.items():
             words_count = 0
-            for word_in_list in words_in_file[1]:
+            for word_in_list in words:
                 if word_in_list == word.lower():
                     words_count += 1
             if words_count > 0:
-                result[words_in_file[0]] = words_count
+                result[name] = words_count
         return result
 
 finder2 = WordsFinder('test_file.txt', 'Mother Goose - Monday’s Child.txt')
