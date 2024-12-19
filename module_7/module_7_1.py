@@ -11,7 +11,7 @@ class Product:
 
 class Shop:
 
-    __file_name = 'products.txt'
+    __file_name = '../products.txt'
 
     def get_products(self):
         if not os.path.exists(self.__file_name):
