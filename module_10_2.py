@@ -22,7 +22,6 @@ first_knight = Knight('Sir Lancelot', 10)
 first_knight.start()
 second_knight = Knight("Sir Galahad", 20)
 second_knight.start()
-while True:
-    if threading.active_count() == 1:
-        print(f'Все битвы закончились!')
-        break
+first_knight.join()
+second_knight.join()
+print(f'Все битвы закончились!')
